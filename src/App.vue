@@ -123,7 +123,7 @@
         class="fill-height"
         fluid
       >
-        <HelloWorld />
+        <router-view />
       </v-container>
     </v-content>
     <v-btn
@@ -224,7 +224,6 @@
 
 <script lang="ts">
   import Vue from "vue";
-  import HelloWorld from "./components/HelloWorld.vue";
 
   export default Vue.extend({
     name: "App",
@@ -267,8 +266,5 @@
         { icon: 'mdi-keyboard', text: 'Go to the old version' },
       ],
     }),
-    components: {
-      HelloWorld
-    },
   });
 </script>
